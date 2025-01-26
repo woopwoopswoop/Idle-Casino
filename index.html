@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skinner's Casino: Voluntary Descent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Game Content (same as original) -->
+  <h1>🎰 SKINNER'S CASINO 🎰</h1>
+  <div class="satire">"Free will" is an illusion. Choose wisely.</div>
+
+  <!-- Stats Display -->
+  <div id="stats">
+    <h2>🪙 <span id="points">0</span></h2>
+    <p>Points/sec: <span id="pps">0</span></p>
+  </div>
+
+  <!-- Main Game Button -->
+  <button id="mainButton">CLICK TO WIN</button>
+  <p>Clicks left: <span id="clicksLeft">10</span></p>
+
+  <!-- Ad System Elements -->
+  <div class="ad-prompt-container" id="adPromptContainer">
+    <button class="ad-prompt-button" id="adPromptButton">
+      <br>REPAIR BUTTON<br>
+      <small>(Watch 22s ad to continue)</small>
+    </button>
+  </div>
+
+  <div class="ad-container" id="adContainer">
+    <h3>ESSENTIAL VIEWING</h3>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+    <p id="adText"></p>
+    <button disabled id="closeAd">Closing disabled (22s remaining)</button>
+  </div>
+
+  <!-- Upgrades Shop -->
+  <div id="upgrades">
+    <div class="upgrade">
+      <h3>Auto-Clicker</h3>
+      <p>Generates 1-3 points/second</p>
+      <p>Owned: <span id="autoClickers">0</span></p>
+      <button id="buyAutoClicker">Cost: 10</button>
+    </div>
+    <div class="upgrade">
+      <h3>Blackjack Table</h3>
+      <p>Risk 50 points to play</p>
+      <p>Requires 5 Auto-Clickers</p>
+      <button id="buyBlackjack" disabled>Unlock (500)</button>
+    </div>
+  </div>
+
+  <!-- Load Game Modules -->
+  <script type="module" src="init.js"></script>
+</body>
+</html>
